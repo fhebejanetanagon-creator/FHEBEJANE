@@ -1,0 +1,79 @@
+title: "RWorksheet#1.rmd"
+author: "Fhebe Jane Tanagon"
+date: "2025-10-20"
+output: pdf_document
+  
+  # 1
+  age <- c(34, 28, 22, 36, 27, 18, 52, 39, 42, 29, 35, 31, 27, 22, 37, 34, 19, 20, 57,
+           49, 50, 37, 46, 25, 17, 37, 42, 53, 41, 51, 35, 24, 33, 41)
+
+# 1a
+length(age)
+
+# 2
+1 / age
+
+# 3
+new_age <- c(age, 0, age)
+length(new_age)
+
+# 4
+sort(age)
+
+# 5
+min(age)
+max(age)
+
+# 6
+data <- c(2.4, 2.8, 2.1, 2.5, 2.4, 2.2, 2.5, 2.3, 2.5, 2.3, 2.4, 2.7)
+
+# 6a
+length(data)
+
+# 7
+double_data <- data * 2
+double_data
+
+# 8.1
+seq1 <- 1:100
+
+# 8.2
+seq2 <- 20:60
+
+# 8.3
+mean(seq2)
+
+# 8.4
+sum(51:91)
+
+# 8.5
+head(1:1000, 10)
+
+# 9
+Filter(function(i) { all(i %% c(3,5,7) != 0) }, 1:100)
+
+# 10
+rev(1:100)
+
+# 11
+multiples <- Filter(function(x) x %% 3 == 0 || x %% 5 == 0, 1:24)
+sum(multiples)
+
+# 12 (Corrected version)
+x <- 0
+x + 5
+
+# 13
+score <- c(72, 86, 92, 63, 88, 89, 91, 92, 75, 75, 77)
+score[2]
+score[3]
+
+# 14
+a <- c(1, 2, NA, 4, NA, 6, 7)
+print(a, na.print = "-999")
+
+# 15
+x <- c(2, 3, 4)
+class(x)
+class(x) <- "foo"
+class(x)
